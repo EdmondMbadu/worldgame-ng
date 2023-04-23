@@ -1,0 +1,31 @@
+
+<nav class="container mx-auto p-2">
+    <div class="flex items-center justify-between">
+      <div class="logo">
+  <a href="">
+        <img src="../assets/img/new-world-game_adobe_express.svg" alt="">
+    </a>
+      </div>
+
+    </div>
+  </nav>
+
+<div class=" container flex flex-col mx-auto">
+    <h1 class="max-w-md">User profile</h1>
+    
+      
+        <span>{{ userProfile?.first_name }} {{ userProfile?.last_name }}</span>
+    <span> {{ userProfile?.username }}</span>
+     
+    <div class="flex">
+     <img class="max-w-sm w-20 h-20" src="{{ userProfile?.profile_pic }}" alt="Profile photo">
+    </div>
+    <div class="">
+     
+        <p>
+          {{ userProfile?.bio }}
+        </p>
+    </div>
+     
+    
+    </div>

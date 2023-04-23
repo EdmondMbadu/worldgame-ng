@@ -1,0 +1,39 @@
+
+
+
+<body>
+    
+
+    <nav class="container mx-auto p-2">
+     <div class="flex items-center justify-between">
+       <div class="logo">
+   <a href="">
+         <img src="../assets/img/new-world-game_adobe_express.svg" alt="">
+     </a>
+       </div>
+ 
+     </div>
+   </nav>
+ 
+   <div class="card card-container">
+     <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" /> <br>
+ 
+     <!-- LOGIN FORM -->
+     <form [formGroup]="registerForm" (ngSubmit)="onSubmit(registerForm.value)" class="form-signin" ngNativeValidate>
+          <p class="text-red-500 mb-2"> {{ errorMessage }}</p>
+         <input type="text" id="username" name="username"   formControlName="username"class="px-4 border-solid border-2 border-teal-500 py-2 m-2 rounded-full " placeholder="Username"  required>
+         <input type="text" id="firstname" name="firstname"   formControlName="firstname"class="px-4 border-solid border-2 border-teal-500 py-2 m-2 rounded-full " placeholder="First Name"  required>
+         <input type="text" id="lastname" name="lastname"   formControlName="lastname"class="px-4 border-solid border-2 border-teal-500 py-2 m-2 rounded-full " placeholder="Last Name"  required>
+         <input type="email" id="email" name="email"   formControlName="email"class="px-4 border-solid border-2 border-teal-500 py-2 m-2 rounded-full " placeholder="Email"  required>
+         <input type="password" id="password" name="password" formControlName="password" class="px-4 border-solid border-2 border-teal-500 py-2 m-2 rounded-full" placeholder="Password"  required>
+         <input type="password" id="confirmpassword" name="confirmpassword" formControlName="confirmpassword" class="px-4 border-solid border-2 border-teal-500 py-2 m-2 rounded-full" placeholder="Confirm Password"  required>
+         <p class="text-xs text-center">By clicking Agree & Join, you agree to the New WorldGame  <a class="text-teal-600">Agreement, Privacy Policy, and Cookie Policy.</a> </p>
+         <button class="p-2 px-5 pt-2 my-2 mx-4 text-white text-center
+         bg-teal-600 rounded-full baseline hover:bg-teal-800" type="submit">Agree & Join</button>
+     </form><!-- /form -->
+ 
+   
+ </div><!-- /card-container -->
+   
+ 
+ </body> 
